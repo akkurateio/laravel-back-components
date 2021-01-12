@@ -1,0 +1,1 @@
+<akk-addresses v-bind='@json($options['componentProps'])' ></akk-addresses>

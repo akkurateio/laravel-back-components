@@ -1,0 +1,37 @@
+.view__body {
+  .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: .8rem;
+  }
+}
+
+.view__footer {
+  .pagination {
+    align-items: center;
+    @include radius(0);
+    margin-bottom: 0;
+  }
+
+  .page-item {
+    .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include radius(0);
+      min-width: $akk-unit * .75;
+      height: $akk-unit;
+      border: none;
+      font-size: .8rem;
+    }
+
+    &:first-child,
+    &:last-child {
+      .page-link {
+        width: $akk-unit;
+      }
+    }
+  }
+}

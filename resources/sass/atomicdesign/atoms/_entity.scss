@@ -1,0 +1,16 @@
+.entity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    border-radius: $border-radius-sm;
+    height: $akk-unit;
+    margin-bottom: .25rem;
+
+    &:hover {
+        border-color: $white;
+        background: $primary;
+        text-decoration: none;
+    }
+}

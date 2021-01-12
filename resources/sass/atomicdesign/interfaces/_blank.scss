@@ -1,0 +1,17 @@
+.interface-blank {
+  overflow: hidden;
+  @include display-grid();
+  @include grid-template-rows($akk-unit 1fr);
+
+  .interface__header {
+    @include grid-row(1);
+    @include boxShadow(0 0 20px 10px rgba($white, 0.8) !important);
+    position: relative;
+    z-index: 1;
+  }
+
+  .interface__body {
+    @include grid-row(2);
+    overflow: auto;
+  }
+}

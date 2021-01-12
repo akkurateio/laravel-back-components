@@ -1,0 +1,12 @@
+.akkurate-kanban {
+    height: calc(100vh - #{$akk-unit}) !important;
+    overflow: hidden;
+
+    .list-group,
+    .items {
+        height: 100%;
+    }
+    .list-group {
+        flex: 1;
+    }
+}

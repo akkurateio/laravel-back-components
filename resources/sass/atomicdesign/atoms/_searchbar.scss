@@ -1,0 +1,35 @@
+input[type="text"].text-white::-webkit-input-placeholder {
+  color: white;
+  opacity: .5;
+}
+
+input[type="text"].text-white::-moz-placeholder {
+  color: white;
+  opacity: .5;
+}
+
+.header__searchbar {
+  position: relative;
+
+  .searchbar-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .searchbar-reset {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  input[type="text"] {
+    height: $akk-unit;
+    line-height: $akk-unit;
+    padding-left: $akk-unit;
+    padding-right: $akk-unit;
+    flex: 1;
+    border: none;
+    background-color: transparent;
+  }
+}

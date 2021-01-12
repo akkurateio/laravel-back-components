@@ -1,0 +1,49 @@
+.view-body {
+  overflow: hidden;
+  height: 100%;
+  @include display-grid();
+
+  .view__body {
+    .inner {
+      padding: $akk-unit / 4;
+    }
+  }
+
+  .view__body {
+    overflow-y: auto;
+    background-color: $gray-100;
+  }
+
+  &.view-with-footer {
+    @include grid-template-rows(1fr $akk-unit);
+
+    .view__body {
+      @include grid-row(1);
+    }
+
+    .view__footer {
+      @include grid-row(2);
+    }
+  }
+
+  &.view-with-header-and-footer {
+    @include grid-template-rows($akk-unit 1fr $akk-unit);
+
+    .view__header {
+      @include grid-row(1);
+
+      .form-group {
+        margin: 0;
+      }
+    }
+
+    .view__body {
+      @include grid-row(2);
+    }
+
+    .view__footer {
+      @include grid-row(3);
+    }
+  }
+}
+

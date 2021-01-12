@@ -1,0 +1,32 @@
+.toggle {
+  width: $akk-unit * .75;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+  background-color: $gray-500;
+  border-radius: $akk-unit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:hover {
+    background-color: $gray-600;
+  }
+
+  &.toggle-active {
+    background-color: $primary;
+    justify-content: flex-end;
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  span {
+    background-color: $white;
+    width: $akk-unit / 4;
+    height: $akk-unit / 4;
+    border-radius: $akk-unit;
+  }
+}

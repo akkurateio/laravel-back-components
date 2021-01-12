@@ -1,0 +1,16 @@
+.view-datagrid {
+  overflow: hidden;
+  height: 100%;
+
+  .view__body {
+    overflow-y: auto;
+    padding: $akk-unit / 4;
+    height: 100%;
+  }
+  
+  &.view-with-footer {
+    .view__body {
+      height: calc(100% - var(--akk-unit));
+    }
+  }
+}

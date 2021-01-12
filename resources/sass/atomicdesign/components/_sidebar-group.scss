@@ -1,0 +1,30 @@
+.sidebar-group {
+    border-top: solid 1px $gray-200;
+
+    &:first-child {
+        border: none;
+    }
+}
+
+.sidebar-group-body {
+    padding: 0 1.25rem 1rem;
+    position: relative;
+    min-height: 140px;
+
+    .loader {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($white, .9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div {
+        overflow-wrap: anywhere;
+    }
+}

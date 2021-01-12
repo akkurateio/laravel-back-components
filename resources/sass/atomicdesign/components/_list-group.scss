@@ -1,0 +1,14 @@
+.list-group-grid {
+  @include display-grid();
+  @include grid-template-columns(25% 25% 25% 25%);
+  @include grid-column(1rem);
+
+  .list-group-item {
+    border: none;
+  }
+
+  .entry-body {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

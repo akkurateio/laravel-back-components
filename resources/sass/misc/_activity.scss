@@ -1,0 +1,21 @@
+.activity {
+    margin: 0 0 1rem;
+    background-color: $white;
+    border-radius: $border-radius-sm;
+    display: flex;
+
+    .activity-body {
+        flex: 1;
+        padding: .5rem .5rem .5rem 0;
+    }
+
+    .body-truncate {
+        position: relative;
+        max-height: 200px;
+        overflow: hidden;
+    }
+
+    p {
+        overflow-wrap: anywhere;
+    }
+}

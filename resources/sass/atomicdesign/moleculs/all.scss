@@ -1,0 +1,24 @@
+.view {
+
+}
+
+.view__header {
+  position: relative;
+  z-index: 10;
+  //@include boxShadow(0 0 20px 10px rgba(0, 0, 0, 0.15) !important);
+}
+.view__footer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  //@include boxShadow(0 0 20px -10px rgba(0, 0, 0, 0.35) !important);
+}
+
+@import "body";
+@import "body-right";
+@import "datagrid";
+@import "left-body";
+@import "left-body-right";
+@import "search";

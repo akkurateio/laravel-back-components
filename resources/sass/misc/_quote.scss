@@ -1,0 +1,123 @@
+.quote-grid-handle {
+    cursor: grab;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-grid-handle:active {
+    cursor: grabbing;
+}
+
+.quote-grid-head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 64px 1fr 160px 80px 70px 80px 130px 64px;
+    align-items: center;
+}
+
+.quote-grid-line {
+    .quote-grid-body {
+        min-height: $akk-unit;
+        background-color: $white;
+        border-top: solid 1px $gray-200;
+    }
+
+    .form-control {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .quote-grid-item {
+        display: grid;
+        grid-template-columns: $akk-unit 1fr $akk-unit;
+        align-items: center;
+
+        .quote-grid-details {
+            min-height: $akk-unit;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 120px 100px 90px 90px 130px;
+            align-items: center;
+        }
+
+        & > div {
+            padding: 0 1rem;
+        }
+
+        input[type="number"], input[inputmode="decimal"], input[type="text"], select {
+            //width: calc(100% - .15rem);
+            background-color: $gray-200;
+            border-color: transparent;
+        }
+    }
+
+    .quote-grid-section {
+        display: grid;
+        grid-template-columns: $akk-unit 1fr $akk-unit;
+        align-items: center;
+
+        .quote-grid-details {
+            min-height: $akk-unit;
+            width: 100%;
+        }
+
+        & > div {
+            padding: 0 1rem;
+        }
+
+        .details {
+            padding: 2rem 0 1rem;
+        }
+    }
+
+    .quote-grid-properties {
+        display: grid;
+        grid-template-columns: $akk-unit 1fr $akk-unit;
+        align-items: center;
+
+        .quote-grid-details {
+            min-height: $akk-unit;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 130px;
+            align-items: center;
+        }
+
+        & > div {
+            padding: 0 1rem;
+        }
+    }
+}
+
+.quote-grid-handle,
+.quote-grid-option {
+    background-color: transparent !important;
+}
+
+.quote-grid-subtotal {
+    border-top: solid 1px $gray-200;
+    margin: 0 $akk-unit;
+    padding: 1rem 1rem 2rem;
+    background-color: $white;
+}
+
+.quote-grid {
+    & > .quote-grid-line {
+        .quote-grid-details {
+            background-color: transparent !important;
+            border: none;
+        }
+    }
+
+    .quote-section {
+        border-top: dotted 2px $gray-300;
+
+        &:first-child {
+            border: none;
+        }
+    }
+}

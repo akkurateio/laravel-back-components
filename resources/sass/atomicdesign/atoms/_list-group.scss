@@ -1,0 +1,14 @@
+.view__left {
+  .list-group-item {
+    &.active {
+      background-color: transparent !important;
+      border-color: transparent;
+      color: $primary;
+      font-weight: 500;
+    }
+  }
+
+  .list-group-item.active + .list-group-item {
+    border-top-width: 1px;
+  }
+}

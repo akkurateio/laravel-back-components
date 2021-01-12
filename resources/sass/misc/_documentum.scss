@@ -1,0 +1,251 @@
+//.documentum {
+//    height: calc(100vh - #{$akk-unit * 2});
+//    //margin-top: $akk-unit;
+//    @include display-grid();
+//    @include grid-template-rows(1fr);
+//    @include grid-template-columns($akk-unit * 5 1fr);
+//    overflow: hidden;
+//
+.documentum__sidebar {
+    &__section {
+        .akk-w-unit {
+            width: $akk-unit - 0.25px;
+        }
+    }
+
+    &__page {
+        min-height: 42px;
+        padding: 0 2px;
+        cursor: pointer;
+
+        .akk-w-unit {
+            width: $akk-unit - 2;
+        }
+
+        &.active {
+            position: relative;
+            color: $white;
+
+            & > div {
+                background-color: $primary;
+            }
+        }
+    }
+
+    &__handle {
+        cursor: grab;
+    }
+}
+//
+//    &__primary {
+//        @include grid-row(1);
+//        @include grid-column(2);
+//        overflow-y: auto;
+//        background-color: $gray-100;
+//    }
+//
+//    &__preview {
+//        @include grid-row(1);
+//        @include grid-column(3);
+//        overflow-y: auto;
+//    }
+//
+//    &__properties {
+//        position: fixed;
+//        top: $akk-unit;
+//        right: 0;
+//        bottom: 0;
+//        width: $akk-unit * 5;
+//        background-color: $white;
+//    }
+//
+//    &__header {
+//        //display: flex;
+//        //align-items: center;
+//        //position: fixed;
+//        //z-index: 1;
+//        //left: $akk-unit;
+//        //height: $akk-unit;
+//        //right: 0;
+//        //top: $akk-unit;
+//        //background-color: $gray-100;
+//        //@include boxShadow(0 0 20px 10px rgba(0, 0, 0, 0.25) !important);
+//        display: none;
+//
+//        .first {
+//            width: $akk-unit * 5;
+//        }
+//    }
+//
+//    &__footer {
+//        display: flex;
+//        align-items: center;
+//        position: fixed;
+//        left: $akk-unit;
+//        height: $akk-unit;
+//        right: 0;
+//        bottom: 0;
+//        z-index: 10;
+//        background-color: $white;
+//        @include boxShadow(0 0 20px -10px rgba(0, 0, 0, 0.35) !important);
+//    }
+//
+//    table {
+//        width: 100%;
+//    }
+//
+//    th {
+//        border-bottom: solid 1px $gray-200;
+//        padding: 0.5rem 0.25rem;
+//    }
+//
+//    td {
+//        border-top: solid 1px $gray-200;
+//        padding: 0.5rem 0.25rem;
+//    }
+//
+//    &.without-sidebar {
+//        @include grid-template-rows(1fr);
+//        @include grid-template-columns(1fr);
+//
+//        .documentum__primary {
+//            @include grid-column(1);
+//        }
+//    }
+//
+//    &.without-editor {
+//        .documentum-editor {
+//            @include grid-template-columns(1fr);
+//
+//            &__preview {
+//                @include grid-column(1);
+//            }
+//        }
+//    }
+//
+//    &.only-render {
+//        @include grid-template-rows(1fr);
+//        @include grid-template-columns(1fr);
+//
+//        .documentum__primary {
+//            @include grid-column(1);
+//        }
+//
+//        .documentum-editor {
+//            @include grid-template-columns(1fr);
+//
+//            &__preview {
+//                @include grid-column(1);
+//            }
+//        }
+//    }
+//}
+
+.documentum-editor {
+    @include display-grid();
+    @include grid-template-columns(50% 50%);
+    height: 100%;
+    .CodeMirror {
+        height: 100% !important;
+    }
+
+    //code[class*="language-"],
+    //pre[class*="language-"] {
+    //    white-space: pre-wrap;
+    //    font-size: 14px;
+    //}
+
+    &__code {
+        @include grid-column(1);
+        overflow-y: auto;
+        font-family: 'Monaco', courier, monospace;
+        border: none !important;
+        background-color: $gray-100;
+    }
+
+    &__preview {
+        background-color: $white;
+        @include grid-column(2);
+        overflow-y: auto;
+    }
+
+    &.preview-only {
+        @include grid-template-columns(0 1fr);
+
+        .documentum-editor__code {
+            display: none;
+        }
+    }
+}
+
+.documentum-config,
+.documentum-info {
+    position: absolute;
+    height: calc(100% - #{$akk-unit});
+    width: 450px;
+    @include boxShadow(0px -15px 40px -13px rgba(0, 0, 0, 0.4) !important);
+    background-color: white;
+    top: $akk-unit;
+    padding: $akk-unit / 2;
+    right: 0;
+    z-index: 100;
+}
+
+.documentum-render {
+    &.render-front h1:first-of-type {
+        display: none;
+    }
+    h1 {
+        margin-top: 4.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin-top: 4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    h3 {
+        margin-top: 3.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h4 {
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h5 {
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h6 {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    //pre {
+    //    background-color: $gray-800;
+    //    color: $white;
+    //    padding: 0.5rem 1rem;
+    //    border-radius: $border-radius-sm;
+    //}
+
+    table {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    th, td {
+        padding: .5rem .35rem;
+    }
+
+    th {
+        border-bottom: solid 1px $gray-200;
+    }
+
+    td {
+        border-top: solid 1px $gray-200;
+    }
+}

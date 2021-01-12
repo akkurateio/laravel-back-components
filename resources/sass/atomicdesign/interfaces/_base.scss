@@ -1,0 +1,36 @@
+.interface-abstract {
+  overflow: hidden;
+  @include display-grid();
+  @include grid-template-columns($akk-unit 1fr);
+  @include grid-template-rows($akk-unit 1fr);
+
+  .interface__sidenav {
+    @include grid-column(1);
+    @include grid-row(1, 2);
+    background-color: $primary;
+  }
+
+  .interface__header {
+    @include grid-column(2);
+    @include grid-row(1);
+    background-color: $primary;
+  }
+
+  .interface__body {
+    @include grid-column(2);
+    @include grid-row(2);
+    overflow: hidden;
+
+    &.scrollable {
+      overflow: auto;
+    }
+
+    form {
+      height: 100%;
+    }
+  }
+
+  &.sidenav-extended {
+    @include grid-template-columns($akk-unit*4 1fr);
+  }
+}

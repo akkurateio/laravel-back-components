@@ -1,0 +1,64 @@
+.interface__sidenav {
+  background-color: $primary;
+}
+
+.sidenav__brand {
+  height: $akk-unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidenav__primary {
+}
+.sidenav__secondary {
+  margin-top: auto;
+}
+
+.sidenav-item {
+  height: $akk-unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: $white;
+  text-underline: none;
+
+  &:hover {
+    background-color: $primary-dark;
+    color: $white;
+    text-underline: none;
+  }
+}
+
+.sidenav__panel {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: $akk-unit * 6;
+  bottom: 0;
+  background-color: $primary;
+  color: $white;
+
+  .sidenav-item {
+    justify-content: start;
+    height: inherit;
+    padding: $akk-unit/6 0;
+
+    &:hover {
+      background-color: transparent;
+      text-underline: none;
+    }
+  }
+}
+
+.sidenav__overlay {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($black, .5);
+  cursor: pointer;
+}

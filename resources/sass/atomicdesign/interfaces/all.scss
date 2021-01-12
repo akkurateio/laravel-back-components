@@ -1,0 +1,18 @@
+.interface {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.interface__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: rgba($primary-darker, .8);
+}
+
+@import "base";
+@import "blank";

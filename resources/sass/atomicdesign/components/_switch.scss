@@ -1,0 +1,44 @@
+.switch {
+  color: $white;
+  height: $akk-unit;
+  background-color: $primary-dark;
+}
+
+.switch-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: $akk-unit * 5;
+  padding-left: $akk-unit / 4;
+  padding-right: $akk-unit / 4;
+}
+
+.switch-module {
+  width: $akk-unit * 5;
+
+  .btn {
+    padding-left: $akk-unit / 4;
+  }
+
+  .items {
+    background-color: $primary-dark !important;
+    border-radius: 0 !important;
+    border: none !important;
+    margin-top: 0 !important;
+  }
+
+  .item {
+    padding: 0 !important;
+  }
+
+  .item-link {
+    display: block;
+    padding: .5rem $akk-unit / 4 !important;
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+

@@ -1,0 +1,24 @@
+{
+    "name": "akkurate/laravel-back-components",
+    "description": "Blade components to quickly build back-office UI",
+    "type": "library",
+    "require": {
+        "akkurate/laravel-core": "^2.0",
+        "jenssegers/agent": "^2.6"
+    },
+    "autoload" : {
+        "psr-4": {
+            "Akkurate\\LaravelBackComponents\\": "src"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akkurate\\LaravelBackComponents\\LaravelBackComponentsServiceProvider"
+            ]
+        }
+    }
+}

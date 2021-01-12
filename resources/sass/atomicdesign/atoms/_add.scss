@@ -1,0 +1,11 @@
+.view__add {
+  position: fixed;
+  z-index: 10;
+  right: 1rem;
+  bottom: 1rem;
+
+  .btn {
+    width: $akk-unit;
+    height: $akk-unit;
+  }
+}

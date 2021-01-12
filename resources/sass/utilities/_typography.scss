@@ -1,0 +1,52 @@
+.text-4xs         {font-size: .55rem!important;}
+.text-3xs         {font-size: .65rem!important;}
+.text-2xs         {font-size: .75rem!important;}
+.text-xs          {font-size: .875rem!important;}
+.text-sm          {font-size: .925rem!important;}
+.text-base        {font-size: 1rem!important;}
+
+.text-lg          {font-size: 1.125rem!important;}
+.text-xl          {font-size: 1.25rem!important;}
+.text-2xl         {font-size: 1.5rem!important;}
+.text-3xl         {font-size: 1.75rem!important;}
+.text-4xl         {font-size: 2rem!important;}
+.text-5xl         {font-size: 2.25rem!important;}
+.text-6xl         {font-size: 2.5rem!important;}
+.text-7xl         {font-size: 2.75rem!important;}
+@include media-breakpoint-up(lg) {
+  .text-3xl         {font-size: 2rem!important;}
+  .text-4xl         {font-size: 2.25rem!important;}
+  .text-5xl         {font-size: 2.5rem!important;}
+  .text-6xl         {font-size: 3rem!important;}
+  .text-7xl         {font-size: 4rem!important;}
+}
+
+.font-thin        {font-weight: 100!important;}
+.font-extralight  {font-weight: 200!important;}
+.font-light       {font-weight: 300!important;}
+.font-normal      {font-weight: 400!important;}
+.font-medium      {font-weight: 500!important;}
+.font-semibold    {font-weight: 600!important;}
+.font-bold        {font-weight: 700!important;}
+.font-extrabold   {font-weight: 800!important;}
+.font-black       {font-weight: 900!important;}
+
+.tracking-tighter {letter-spacing: -0.05em;}
+.tracking-tight   {letter-spacing: -0.025em;}
+.tracking-normal  {letter-spacing: 0;}
+.tracking-wide    {letter-spacing: 0.025em;}
+.tracking-wider   {letter-spacing: 0.05em;}
+.tracking-widest  {letter-spacing: 0.1em;}
+
+.leading-none	  {line-height: 1;}
+.leading-tighter  {line-height: 1.25;}
+.leading-tight	  {line-height: 1.375;}
+.leading-normal	  {line-height: 1.5;}
+.leading-wide     {line-height: 1.625;}
+.leading-wider	  {line-height: 2;}
+
+.text-discount {color: darken($warning, 10%);}
+.text-decoration-underline {text-decoration: underline!important;}
+
+.field { margin-bottom: .5rem;}
+.field-label { font-size: .65rem; color: $gray-500;}
