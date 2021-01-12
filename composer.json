@@ -1,9 +1,9 @@
 {
-    "name": "akkurate/laravel-back-components",
+    "name": "akkurateio/laravel-back-components",
     "description": "Blade components to quickly build back-office UI",
     "type": "library",
     "require": {
-        "akkurate/laravel-core": "^2.0",
+        "akkurateio/laravel-core": "^0.1",
         "jenssegers/agent": "^2.6"
     },
     "autoload" : {
