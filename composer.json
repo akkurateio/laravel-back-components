@@ -3,6 +3,8 @@
     "description": "Blade components to quickly build back-office UI",
     "type": "library",
     "license": "AGPL-3.0-only",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Akkurate",
