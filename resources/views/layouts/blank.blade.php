@@ -7,7 +7,7 @@
         <div id="app">
             @if(auth()->user() && auth()->user()->account)
                 <akk-initer user-props="{{ json_encode(auth()->user()) }}"
-                            account-props="{{ json_encode(\Akkurate\LaravelCore\Models\Account::where('slug', request('uuid'))->first()) }}"></akk-initer>
+                            account-props="{{ json_encode(currentAccount()) }}"></akk-initer>
             @endif
             @yield('content')
         </div>

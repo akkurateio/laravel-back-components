@@ -17,7 +17,6 @@
         "docs": "https://github.com/akkurateio/documentation"
     },
     "require": {
-        "akkurateio/laravel-core": "0.x-dev",
         "jenssegers/agent": "^2.6"
     },
     "autoload" : {

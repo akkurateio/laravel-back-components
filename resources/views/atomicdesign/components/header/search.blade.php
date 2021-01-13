@@ -7,13 +7,15 @@
         @endif
     @endif
 
-    {{-- Double condition pour éviter un changement non rétrocompatible suite à une évolution du fichier de config laravel-search --}}
-    @if(config('laravel-search.elastic.enabled') || config('laravel-search.enabled'))
-        <div class="mr-auto">
-            @include('search::partials.akk4search')
-        </div>
-    @else
-        @include('back::atomicdesign.atoms.searchbar')
+    @if(config('laravel-search'))
+        {{-- Double condition pour éviter un changement non rétrocompatible suite à une évolution du fichier de config laravel-search --}}
+        @if(config('laravel-search.elastic.enabled') || config('laravel-search.enabled'))
+            <div class="mr-auto">
+                @include('search::partials.akk4search')
+            </div>
+        @else
+            @include('back::atomicdesign.atoms.searchbar')
+        @endif
     @endif
 
     {{ $slot }}
