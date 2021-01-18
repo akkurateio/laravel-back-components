@@ -32,21 +32,25 @@ class LaravelBackComponentsServiceProvider extends ServiceProvider
             __DIR__ . '/../resources/js' => resource_path('js/vendor/back-components'),
         ], 'js');
 
-        $this->publishes([
-            __DIR__ . '/../public' => public_path(),
-        ], 'back-components-assets');
-
-        $this->publishes([
-            __DIR__ . '/../resources/fonts' => public_path('fonts'),
-        ], 'back-components-assets');
-
-        $this->publishes([
-            __DIR__ . '/../resources/favicons' => public_path('favicons'),
-        ], 'back-components-assets');
-
-        $this->publishes([
-            __DIR__ . '/../resources/images' => public_path('images'),
-        ], 'back-components-assets');
+//        $this->publishes([
+//            __DIR__ . '/../resources/mix' => base_path(),
+//        ], 'back-components-assets');
+//
+//        $this->publishes([
+//            __DIR__ . '/../resources/public' => public_path(),
+//        ], 'back-components-assets');
+//
+//        $this->publishes([
+//            __DIR__ . '/../resources/fonts' => public_path('fonts'),
+//        ], 'back-components-assets');
+//
+//        $this->publishes([
+//            __DIR__ . '/../resources/favicons' => public_path('favicons'),
+//        ], 'back-components-assets');
+//
+//        $this->publishes([
+//            __DIR__ . '/../resources/images' => public_path('images'),
+//        ], 'back-components-assets');
 
         $this->publishes([
             __DIR__ . '/../config/back-components.php' => config_path('back-components.php'),

@@ -1,0 +1,24 @@
+// Fonts
+@import '~/common/fonts';
+
+// Variables
+@import '~/common/variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// If published in vendor
+@import '~/vendor/back-components/all';
+@import '~/vendor/back-components/misc/all';
+@import '~/vendor/auth/atomicdesign/all';
+// @import '~/vendor/blog/atomicdesign/all';
+
+// Else
+//@import "../../../vendor/akkurate/laravel-back-components/resources/sass/all";
+//@import "../../../vendor/akkurate/laravel-auth/resources/sass/atomicdesign/all";
+//@import "../../../vendor/akkurate/laravel-blog/resources/sass/atomicdesign/all";
+
+// Deprecated
+//@import "../../../vendor/akkurate/laravel-back-components/resources/sass/utilities/all";
+//@import "../../../vendor/akkurate/laravel-back-components/resources/sass/components/all";
+//@import "../../../vendor/akkurate/laravel-media/resources/sass/all";

@@ -1,0 +1,162 @@
+$akk-unit: 64px;
+:root {
+    --akk-unit: $akk-unit;
+}
+$akk-spacer: $akk-unit;
+$akk-spacers: ();
+$akk-spacers: map-merge(
+        (
+            1: ($akk-spacer * .25),
+            2: ($akk-spacer * .5),
+            3: ($akk-spacer * .75),
+            4: $akk-spacer,
+            5: ($akk-spacer * 1.25),
+            6: ($akk-spacer * 1.5),
+            8: ($akk-spacer * 2),
+            10: ($akk-spacer * 2.5),
+            12: ($akk-spacer * 3),
+            16: ($akk-spacer * 4),
+            20: ($akk-spacer * 5),
+            24: ($akk-spacer * 6),
+            32: ($akk-spacer * 8),
+            40: ($akk-spacer * 10),
+            48: ($akk-spacer * 12),
+            64: ($akk-spacer * 16),
+        ),
+        $akk-spacers
+);
+
+// Color system
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// fusv-disable
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+) !default;
+// fusv-enable
+
+$blue: #1D189C !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+) !default;
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "white": $white,
+    "black": $black,
+    "neutral": $gray-600,
+    "light": $light,
+    "dark": $dark
+) !default;
+
+// Typography
+$font-family-sans-serif:    "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif:         "Times New Roman", Times, serif;
+$line-height-base:          1.7 !default;
+
+$font-sizes: (
+    "4xs": .55,
+    "3xs": .65,
+    "2xs": .75,
+    "xs": .875,
+    "sm": .925,
+    "md": 1,
+    "lg": 1.125,
+    "xl": 1.25,
+    "2xl": 1.5,
+    "3xl": 1.75,
+    "4xl": 2,
+    "5xl": 2.25,
+    "6xl": 2.5,
+    "7xl": 2.75,
+    "8xl": 3.25,
+    "9xl": 4,
+    "10xl": 5,
+) !default;
+
+// Components
+$border-radius-sm: .15rem;
+$border-radius: .35rem;
+$border-radius-lg: .7rem;
+
+// Buttons + Forms
+$btn-border-radius:           $border-radius;
+$btn-border-radius-lg:        $border-radius;
+$btn-border-radius-sm:        $border-radius-sm;
+
+$input-btn-border-width: 2px;
+$input-border-radius:         $border-radius-sm;
+$input-border-radius-lg:      $border-radius-sm;
+$input-border-radius-sm:      $border-radius-sm;
+
+$custom-checkbox-indicator-border-radius: $border-radius-sm;
+$custom-select-border-radius:       $border-radius-sm;
+
+// Breadcrumbs
+$breadcrumb-padding-y: .75rem;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding-x: .5rem;
+
+$breadcrumb-margin-bottom: 1rem;
+
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: $black;
+$breadcrumb-active-color: $black;
+$breadcrumb-divider: quote("―");
+
+$breadcrumb-border-radius: 0;
