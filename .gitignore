@@ -3,6 +3,6 @@ build
 node_modules/
 composer.lock
 docs
-vendor
+./vendor
 coverage
 .phpunit.result.cache
