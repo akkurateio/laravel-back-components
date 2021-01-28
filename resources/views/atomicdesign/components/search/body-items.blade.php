@@ -5,7 +5,10 @@
                 <li class="nav-item">
                     <a href="#all" id="all-tab" aria-controls="all" aria-selected="true"
                        class="nav-link active" data-toggle="tab"
-                       role="tab">{{ __('Tous les :model', ['model' => __($labels['plural'])]) }}</a>
+                       role="tab">{{ __('Tou:genders les :model', [
+                            'gender' => __($labels['gender'] == 'feminine' ? 'te' : ''),
+                            'model' => __($labels['plural']),
+                        ]) }}</a>
                 </li>
             @endif
             @if(!empty($items['lastupdated']))
